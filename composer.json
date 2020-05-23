@@ -1,0 +1,29 @@
+{
+    "name": "quannguyen/demo",
+    "description": "Demo package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "nguyenquan",
+            "email": "nguyenhonquan89@gmail.com"
+        }
+    ],
+    "require": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Demo\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Demo\\Providers\\DemoServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
