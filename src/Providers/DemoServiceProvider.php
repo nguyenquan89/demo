@@ -38,6 +38,9 @@ class DemoServiceProvider extends ServiceProvider
 		$this->registerModule();
 
         $this->publish();
+
+        $this->app['router']->aliasMiddleware('demo', \Sudo\Demo\Http\Middleware\Demo::class);
+
 	}
 
 	private function registerModule() {

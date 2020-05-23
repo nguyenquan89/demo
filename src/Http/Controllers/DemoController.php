@@ -5,7 +5,7 @@ namespace Sudo\Demo\Http\Controllers;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-
+use Sudo\Demo\Models\Demo;
 class DemoController extends Controller
 {
     /**
@@ -15,6 +15,9 @@ class DemoController extends Controller
      */
     public function index()
     {
+        dump(testTest());
+        dump(Demo::demoText());
+        die;
         if (\File::exists( resource_path('views/demo/index.blade.php') )) {
             return view('demo.index');
         } else {
